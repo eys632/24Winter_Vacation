@@ -1,0 +1,27 @@
+# control shift f 누르면 아래처럼 정리됨
+<row>
+    <Passenger ID>PassengerId
+    <Passenger ID>
+    <Survival (1: Survived, 0: Died)>Survived
+    <Survival (1: Survived, 0: Died)>
+    <Passenger Class>Pclass
+    <Passenger Class>
+    <Name>Name
+    <Name>
+    <Sex>Sex
+    <Sex>
+    <Age>Age
+    <Age>
+    <Number of Siblings/ Spouses Aboard>SibSp
+    <Number of Siblings/ Spouses Aboard>
+    <Number of Parents/ Children Aboard>Parch
+    <Number of Parents/ Children Aboard>
+    <Ticket Number>Ticket
+    <Ticket Number>
+    <Fare>Fare
+    <Fare>
+    <Cabin>Cabin
+    <Cabin>
+    <Port of Embarkation>Embarked
+    <Port of Embarkation>
+</row>
