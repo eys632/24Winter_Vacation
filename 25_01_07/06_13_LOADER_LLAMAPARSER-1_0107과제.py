@@ -1,6 +1,6 @@
 #!pip install -U langchain_upstage
 #!pip install -qU langchain-teddynote
-
+print("===========upstage============")
 from dotenv import load_dotenv
 import os
 
@@ -15,7 +15,11 @@ upstage_api_key = os.getenv("UPSTAGE_API_KEY")
 from langchain_upstage import UpstageLayoutAnalysisLoader
 
 # 파일 경로
-file_path = r"C:\Users\eys63\Desktop\기타활동\2024\겨울방학\24Winter_Vacation\data\Linear Algebra and Its Applications, chapter1.pdf"
+file_path = r"C:\Users\eys63\Desktop\기타활동\2024\겨울방학\24Winter_Vacation\data\SPRI_AI_Brief_2023년12월호_F.pdf"
+
+# test
+from dotenv import load_dotenv
+load_dotenv(dotenv_path=r"C:\Users\eys63\Desktop\기타활동\2024\겨울방학\24Winter_Vacation\25_01_07\.env")
 
 # 문서 로더 설정
 loader = UpstageLayoutAnalysisLoader(
@@ -24,7 +28,7 @@ loader = UpstageLayoutAnalysisLoader(
     split="page",
     use_ocr=True,
     exclude=["header", "footer"],
-    api_key=UPSTAGE_API_KEY,
+    api_key= upstage_api_key
 )
 
 # 문서 로드
@@ -33,3 +37,14 @@ docs = loader.load()
 # 결과 출력
 for doc in docs[:]:
     print(doc)
+
+print("===========LLAMAPARSER============")
+
+import os
+import nest_asyncio
+
+LLAMA_CLOUD_API_KEY = ''
+nest_asyncio.apply()
+
+
+
