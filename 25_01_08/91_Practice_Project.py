@@ -1,6 +1,10 @@
 import os
 import mimetypes
 import openai
+from dotenv import load_dotenv
+
+# .env 파일 로드
+load_dotenv()
 
 # 1. 파일 형식 판별 함수
 def detect_file_type(file_path):
